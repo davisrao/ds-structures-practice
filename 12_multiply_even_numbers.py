@@ -12,3 +12,14 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
+
+    #loop through array and add the counter
+    #by multiplication if even
+
+    sum_product=1
+
+    for num in nums:
+        if num % 2 == 0:
+            sum_product *= num
+    
+    return sum_product

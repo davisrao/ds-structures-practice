@@ -45,8 +45,8 @@ def list_manipulation(lst, command, location, value=None):
     ## If statement for whether it's remove or add
     ## If statement for whether it's beginning or end
     ## Based on the if statement tree, we push/pop/shift/unshift
-        ## list.pop(idx)
-        ## list.insert(idx)
+    # list.pop(idx)
+    # list.insert(idx)
 
     if command == "remove":
         if location == "beginning":
@@ -66,6 +66,9 @@ def list_manipulation(lst, command, location, value=None):
             return None
     else:
         return None
+
+
+    #can have a list / dict / tuple of valid args and then check those at the starts - fail fast if can
 
     # How could we have dealt with the invalid arguments? We tried the below and it threw errors
     # if command == "remove":

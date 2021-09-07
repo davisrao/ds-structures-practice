@@ -17,3 +17,5 @@ def frequency(lst, search_term):
     return counter
 
 
+# same thing as count method so we should use that
+

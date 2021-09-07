@@ -23,4 +23,6 @@ def single_letter_count(word, letter):
 
     return counter
 
+# look into the count method here - this makes thsi a lot easier
+
 

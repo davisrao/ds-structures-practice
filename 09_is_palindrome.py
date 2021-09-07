@@ -37,3 +37,4 @@ def is_palindrome(phrase):
 
 
 
+## can just use to lower with stepping back
