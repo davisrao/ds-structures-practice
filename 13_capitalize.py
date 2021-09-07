@@ -10,6 +10,7 @@ def capitalize(phrase):
 
     phrase_list = list(phrase)
 
-    phrase_list[0] = phrase_list[0].upper()
-    result_str = "".join(phrase_list)
-    return result_str
+
+    capitalized_letter = phrase_list[0].upper()
+    new_phrase = phrase.replace(phrase[0],capitalized_letter,1)
+    return new_phrase
