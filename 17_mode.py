@@ -11,3 +11,9 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+    # Dic part with val: count(val)
+    
+    from statistics import mode
+
+    return mode(nums)

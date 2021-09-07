@@ -26,3 +26,39 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3) is None
         True
     """
+
+    # If it throws an error related to operation(a,b), return None
+    # add = a + b
+    # subtract = a - b
+    # result = operation(a,b) // operation == foo => result = foo(a,b) => throws error 
+    # if make_int == True
+    #   convert result to int
+    # Return string interpolation of message + result
+
+    if make_int == True:
+        a, b = (round(a), round(b))
+    
+    if operation == "add":
+        result = a + b
+    elif operation == "subtract":
+        result = a - b
+    elif operation == "multiply":
+        result = a * b
+    elif operation == "divide":
+        result = a / b
+    else:
+        return None
+    
+    return f"{message} {result}"
+
+# def add(a,b):
+#         return a + b
+
+# def subtract(a,b):
+#     return a - b
+
+# def multiply(a,b):
+#     return a * b
+
+# def divide(a,b):
+#     return a / b   
