@@ -10,3 +10,17 @@ def single_letter_count(word, letter):
         >>> single_letter_count("Hello World", 'l')
         3
     """
+
+    # we need to make the whole string lowercase
+    # normal ltr of word + if statement
+
+    lowercase_word = word.lower()
+    counter = 0
+
+    for ltr in lowercase_word:
+        if ltr == letter:
+            counter +=1
+
+    return counter
+
+

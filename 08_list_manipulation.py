@@ -40,3 +40,41 @@ def list_manipulation(lst, command, location, value=None):
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
     """
+
+    ## Need to deal with invalid commands (If statement?)
+    ## If statement for whether it's remove or add
+    ## If statement for whether it's beginning or end
+    ## Based on the if statement tree, we push/pop/shift/unshift
+        ## list.pop(idx)
+        ## list.insert(idx)
+
+    if command == "remove":
+        if location == "beginning":
+            return lst.pop(0)
+        elif location == "end":
+            return lst.pop()
+        else:
+            return None
+    elif command == "add":
+        if location == "beginning":
+            lst.insert(0,value)
+            return lst
+        elif location == "end":
+            lst.append(value)
+            return lst
+        else:
+            return None
+    else:
+        return None
+
+    # How could we have dealt with the invalid arguments? We tried the below and it threw errors
+    # if command == "remove":
+    #     if location == "beginning":
+    #         return lst.pop(0)
+    #     else:
+    #         return lst.pop()
+    # else:
+    #     if location == "beginning":
+    #         return lst.insert(0,value)
+    #     else:
+    #         return lst.insert(value)
